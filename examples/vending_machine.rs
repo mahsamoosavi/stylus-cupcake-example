@@ -1,7 +1,7 @@
-//! Example on how to interact with a deployed `stylus-hello-world` program using defaults.
+//! Example on how to interact with a deployed `vending machine` program using defaults.
 //! This example uses ethers-rs to instantiate the program using a Solidity ABI.
-//! Then, it attempts to check the current counter value, increment it via a tx,
-//! and check the value again. The deployed program is fully written in Rust and compiled to WASM
+//! Then, it attempts to check the current cupcake balance, give a cupcake via a transaction,
+//! and check the balance again. The deployed program is fully written in Rust and compiled to WASM
 //! but with Stylus, it is accessible just as a normal Solidity smart contract is via an ABI.
 
 use ethers::{
@@ -64,8 +64,6 @@ async fn main() -> eyre::Result<()> {
     println!("Private key read from file: {}", privkey); // Debugging line
 
 
-
-
     let wallet = LocalWallet::from_str(&privkey)?;
     let chain_id = provider.get_chainid().await?.as_u64();
     let client = Arc::new(SignerMiddleware::new(
@@ -92,7 +90,6 @@ async fn main() -> eyre::Result<()> {
             println!("Failed to get transaction receipt");
         }
     }
-
 
     let balance = vending_machine.get_cupcake_balance_for(user_address).call().await?;
     println!("New user cupcake balance = {:?}", balance);
