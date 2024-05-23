@@ -1,6 +1,6 @@
 # Stylus Cupcake Example
 
-An example project for writing Arbitrum Stylus programs in Rust using the[stylus-sdk](https://github.com/OffchainLabs/stylus-sdk-rs). It includes a Rust implementation of a vending machine Ethereum smart contract.
+An example project for writing Arbitrum Stylus programs in Rust using the [stylus-sdk](https://github.com/OffchainLabs/stylus-sdk-rs). It includes a Rust implementation of a vending machine Ethereum smart contract.
 
 ```js
 // SPDX-License-Identifier: UNLICENSED
@@ -96,7 +96,6 @@ Alternatively, you can  copy the `.env-sample` into a `.env` file:
 
 ```
 cp .env-sample .env
-
 ```
 
 Next, run:
