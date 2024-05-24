@@ -64,7 +64,7 @@ interface VendingMachine {
 ## Deploying
 
 You can use the `cargo stylus` command to also deploy your program to the Stylus testnet. We can use the tool to first check
-our program compiles to valid WASM for Stylus and will succeed a deployment onchain without transacting. By default, this will use the Stylus testnet public RPC endpoint. See here for [Stylus testnet information](https://docs.arbitrum.io/stylus/reference/testnet-information)
+our program compiles to valid WASM for Stylus and will succeed a deployment onchain without transacting. By default, this will use the Stylus testnet public RPC endpoint. See here for [Stylus testnet information](https://docs.arbitrum.io/stylus/reference/testnet-information).
 
 ```bash
 cargo stylus check
